@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chilanka' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <div class="coverimgctn" id="coverimgctn"></div>
+    <div class="navbar" id="navbar">
+      <button class="navbtn" id="homebtn" href="index.html"><a class="navbarlink" href="index.html">Home</a></button>
+      <button class="navbtn" id="portfoliobtn" ><a class="navbarlink" href="portfolio.html">Portfolio</a></button>
+      <!-- <button class="navbtn" id="stufiobtn"><a class="navbarlink" href=" ">Studio</a></button> -->
+      <button class="navbtn" id="contactbtn"><a class="navbarlink" href="contact.html">Contact</a></button>
+        <div class="generalctn" id="generalctn">
+            <div class="generalstick" id="upper-general"></div>
+            <div class="generalstick" id="middle-general"></div>
+            <div class="generalstick" id="bottom-general"></div>
+        </div>
+        <div class="exit" id="exit"><i id="iconexit" class="fa fa-times" aria-hidden="true"></i></div>
+    </div>
+
+    <div class="infobox" id="infobox">  
+        <p class="bio-name" id="name">Le Dieu Linh</p>
+        <p class="bio-name" id="school">A collection of my working experience & past involvement in extracurricular activities, projects and non-profit organizations</p>
+        <p class="bio-name" id="mail">Design & Presented by Le Dieu Linh</p>   
+    </div>
+
+    <div class="slider">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 1.png" >
+        <img class="slides w3-animate-right" src="css\gallery\photo - 2.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 3.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 4.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 5.jpg">       
+        <img class="slides w3-animate-right" src="css\gallery\photo - 6.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 7.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 8.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 9.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 10.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 11.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 12.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 13.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 14.jpg">        
+        <img class="slides w3-animate-right" src="css\gallery\photo - 15.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 16.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 17.jpg">
+        <img class="slides w3-animate-right" src="css\gallery\photo - 18.jpg">
+    </div>
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2500);    
+      }
+      </script>
+
+
+
+
+
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!-- <script src="deviceDetect.js"></script> -->
+    <script src="js/plugins.js"></script>
+        <script>
+            $(window).on("load", function() {
+                $('body').addClass('loaded');
+            });
+    </script>
+</body>
+</html>
