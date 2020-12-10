@@ -64,6 +64,7 @@ html, body {
     letter-spacing: 0.5vh;
 }
 #school {
+    width: 40vw;
     font-family: Abel;
     font-size: 2.5vh;
     margin: 0 0 0 0;
