@@ -326,6 +326,13 @@ body {
   color: white;
 }
 
+#yt:hover {
+  background: #ff0000;
+  animation: rotateicon 0.7s;
+  text-decoration: none;
+  color: white;
+}
+
 
 /*Des Video*/
 /*Des Video*/
